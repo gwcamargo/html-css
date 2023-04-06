@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Display</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 1em;
+        }
+
+        div {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        div.texto-01 {
+            background-color: yellow;
+            display: block;
+        }
+
+        div.texto-02 {
+            background-color: yellowgreen;
+        }
+
+        div.texto-03 {
+            background-color: darkgoldenrod;
+            display: block;
+        }
+
+        div.aparecer:hover div.texto-04 {
+            display: block;
+        }
+
+        div.texto-04 {
+            background-color: gold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="texto-01">
+        <h1>Texto 01</h1>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem illum soluta, placeat quas itaque alias error quidem cupiditate molestias ab pariatur amet dolorum sapiente, fugit rerum vitae minus incidunt distinctio.
+    </div>
+    <div class="texto-02">
+        <h1>Texto 02</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt explicabo ullam reprehenderit sit ratione dicta quae omnis voluptatum quia? Accusamus magni doloribus laboriosam dolorum aperiam. Libero aspernatur dolores ab cumque.
+    </div>
+    <div class="texto-03">
+        <h1>Texto 03</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi praesentium, neque quo ullam odio iure perspiciatis repellat minus omnis doloribus illo nostrum, nihil voluptatibus laboriosam pariatur nesciunt voluptates sint?
+    </div>
+    <div class="aparecer">
+        Aparecer texto-04
+        <div class="texto-04">
+            <h1>Texto 04</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas dolorum rerum neque placeat? Qui tempore quis architecto alias repellendus obcaecati sit sunt sequi iure, itaque quidem officiis ex aliquam.
+        </div>
+    </div>
+    
+</body>
+</html>
