@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox 01</title>
+    <title>Flexbox 05</title>
     <style>
         body {
-            background-color: turquoise;
+            background-color: aqua;
             padding: 60px;
         }
 
@@ -21,9 +21,17 @@
             display: flex;
             border: 2px solid black;
 
-            flex-direction: row;
+            align-items: center;
         }
-    
+
+        .flex .item:nth-of-type(1) {
+            align-self: flex-end;
+        }
+
+        .flex .item:nth-of-type(4) {
+            align-self: flex-end;
+        }
+
         .item {
             background-color: lightgreen;
             border: 1px solid black;
@@ -37,11 +45,12 @@
 </head>
 <body>
     <main class="flex">
-       <div class="item">1</div>
-       <div class="item">2</div>
-       <div class="item">3</div>
-       <div class="item">4</div>
-       <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
     </main>
 </body>
 </html>
